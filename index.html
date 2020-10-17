@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>First Javscript Webpage </title>
+
+	<link rel="stylesheet" href="master.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4d3eeae286.js" crossorigin="anonymous">
+
+	</script>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/89169aabc8.js"></script>
+	
+
+
+</head>
+
+<body onLoad="setPictures()" class="body">
+	<img src="img/bruntal_logo.png" alt="" id = "bruntal_logo">
+	<img src="img/zubata_zaba2.png" alt="" id = "zaba">
+	<div class="header">
+
+		<ul>
+			<li><a href="#" id="language">Cesky</a>
+				<ul class="dropdown">
+					<li ><a onclick="cesky()" class="selectLanguage" href="#" >Cesky</a></li>
+					<li><a onclick="english()" class="selectLanguage" href="#" >English</a></li>
+					<li><a onclick="russian()" class="selectLanguage" href="#" >Russian</a></li>
+
+				</ul>
+			</li>
+		</ul>
+
+
+
+
+		<h1 id="home">My Javscript Project</h1>
+		<h1 id="homeTown">Město Bruntál</h1>
+
+
+	</div>
+	<div class="box">
+
+		<ul class="main-nav">
+			<li><a href="#home" onclick="goHome()">Home</a></li>
+			<li><a href="#aboutus" onclick="aboutUs()">About Us</a></li>
+			<li><a href="#portfolio" onclick="portfolio()">Portfolio</a></li>
+			<li><a href="#contact" onclick="contact()">Contact</a></li>
+			<li><a href="#gallery" onclick="gallery()">Gallery</a></li>
+			<li><a href="admin.html" >Admin</a></li>
+			<li id="logged" onclick="openLoginForm()"><a>you are logged out!!</a></li>
+		</ul>
+
+
+
+	</div>
+	<div class="side_nav_btn" onclick="openSideNav()">
+		<i id="icon" class="fas fa-chevron-right"></i>
+
+	</div>
+	<div class="side_nav">
+
+		<ul class="side_nav_ul">
+			<li>
+				<a href="#">Urady</a>
+				<ul>
+					<li><a href="#">Obecni Urad</a></li>
+					<li><a href="#">Pracovni Urad</a></li>
+					<li><a href="#">Vodarny a kanalizace</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Sportovni Zarizeni</a>
+				<ul>
+					<li><a href="#">Zimni Stadion</a></li>
+					<li><a href="#">Fotbalovy Stadion</a></li>
+					<li><a href="#">Welness Centrum</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Zamestnani</a></li>
+			<li><a onclick="closeButton()">Pocasi</a></li>
+		</ul>
+
+	</div>
+	<div class="banner" id="banner">
+
+		<div class="top-slide-button" onclick="slider()">▲</div>
+		<img src="img/autumnBW.jpg" alt="error" class="main-image fade" id="banner-img">
+	</div>
+	<div class="aboutus">
+		<div class="background">
+			<h2 id='aboutus' onclick="aboutUs()">About Us</h2>
+		</div>
+		<p id="aboutUsParaf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+			amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	</div>
+	<div class="portfolio">
+		<div class="background">
+			<h2 id='portfolio' onclick="portfolio()">Portfolio</h2>
+			<
+		</div>
+		<p id="portfolioParaf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br /><br />Lorem
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+	</div>
+	<div class="contact">
+		<div class="background">
+			<h2 id="contact" onclick="contact()">Contact</h2>
+		</div>
+		<div class="contactContent">
+
+			<div class="form_wrapper">
+				<div class="form">
+
+					<form onsubmit="return validate()" class="myForm" action="submitted.html" method="post">
+						<label for="firstName" >First Name</label>
+						<input type="text" id = "firstName" name="firstName" value="" placeholder="">
+						<label for="lastName" >Last Name</label>
+						<input type="text" id ="lastName" name="lastName" value="" placeholder="">
+						<label for="Email">Email</label>
+						<input type="text" id ="email" name="email" value="" placeholder="">
+						<button type="submit" name="button" id="submit_btn">Submit</button>
+
+					</form>
+				</div>
+			</div>
+			<iframe src="https://api.mapy.cz/frame?params=%7B%22x%22%3A17.46470193768102%2C%22y%22%3A49.98844485285652%2C%22base%22%3A%221%22%2C%22layers%22%3A%5B%5D%2C%22zoom%22%3A11%2C%22url%22%3A%22https%3A%2F%2Fen.mapy.cz%2Fs%2Ffemucumuhe%22%2C%22mark%22%3A%7B%22x%22%3A%2217.46470193768102%22%2C%22y%22%3A%2249.98844485285652%22%2C%22title%22%3A%22Brunt%C3%A1l%22%7D%2C%22overview%22%3Atrue%7D&amp;width=700&amp;height=466&amp;lang=en" width="100%" height="466" style="border:none" frameBorder="0"></iframe>
+		</div>
+
+	</div>
+	<div class="top-slide-button" id= "mapButton" onclick="openMap()">▼</div>
+	<div class="gallery">
+		<div class="background" onclick="gallery()">
+			<h2 id="gallery">Gallery</h2>
+		</div>
+		<!--<div class="pictures_grid">
+
+		</div> -->
+		<div class="carousel">
+			<button class="carousel_button" onclick="next()"><</button>
+			<div class="carousel_item" id = "firstPic" onclick="enlarge()">
+
+			</div>
+
+			<div class="carousel_item" id = "secondPic" onclick="enlarge2()">
+
+			</div>
+			<div class="carousel_item" id = "thirdPic" onclick="enlarge3()">
+
+			</div>
+			<button class="carousel_button" onclick="previous()">></button>
+
+		</div>
+
+	</div>
+
+	<div class="largeImageContainer">
+		<img src="" alt="" id="bigPicture" >
+		<img src="img/error.svg" alt="" class="closeIcon" onclick="closeImage()">
+		<img src="img/next.svg" alt="" class="nextIcon" onclick="largeImageNext()">
+		<img src="img/back.svg" alt="" class="backIcon" onclick="largeImageBack()">
+
+	</div>
+
+
+
+
+	<footer></footer>
+	<img src="img/up-arrow.svg" alt="" id ="myBtn"  onclick="topFunction()">
+
+	<!-- Weather app api -->
+	<div class="location">
+		<h1 class="location-timezone">Timezone</h1>
+		<canvas class="icon" width="128" height="128"></canvas>
+		<div class="temperarture">
+			<h1 class="temperature-degree">34</h1>
+			<h2 class="farCels">F</h2>
+
+			<div class="temperature-description">
+
+			</div>
+			<p id="week"></p>
+		</div>
+
+		<img src="img/error.svg" id="closeWeather" onclick="closeButton()" alt="">
+
+	</div>
+	<form class="form-addUser">
+		<img src="img/error.svg" id="closeLoginForm_btn" alt="" onclick="openLoginForm()">
+		Username: <input type="text" name="" value="" id="loginUser">
+		Password: <input type="text" name="" value="" id="loginPassword">
+
+		<button type="button" name="button"  onclick="login()" >Log in</button>
+		<button type="button" name="button"  onclick="logout()" >Log out</button>
+		<h2 id="formErrorMessage"></h2>
+
+
+	</form>
+
+
+
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="dropdown.js"></script>
+		<script type="text/javascript" src="weather.js"></script>
+		<script type="text/javascript" src="skycons.js"></script>
+
+		<script type="text/javascript" src="slide.js"></script>
+		<script type="text/javascript" src="carousel.js"></script>
+		<script type="text/javascript" src="formValidation.js"></script>
+		<script type="text/javascript" src="sidenav.js"></script>
+		<script type="text/javascript" src="arrowUp.js"></script>
+		<script type="text/javascript" src="admin.js"></script>
+		
+
+		<script type="text/javascript">
+			pictureSlide();
+			/*getPictures();*/
+
+		</script>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js" integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="animation.js"></script>
+</html>

@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	background-color: #11245c;
+	padding: 30px;
+
+	color: lightgrey;
+	text-align: center;
+}
+
+.table, th, td{
+	border: 1px solid lightgray;
+
+}
+table {
+	border-collapse: collapse;
+	margin:auto;
+
+
+}
+th,td {
+	padding: 50px;
+	width: 150px;
+}
+th {
+	background-color: lightgrey;
+	border: 1px solid gray;
+
+}
+form {
+	text-align: center;
+	padding: 50px;
+}
+
+body {
+	font-family: arial;
+}
+input, select, button {
+	padding: 5px;
+	margin-right: 20px;
+}
+button {
+	border-radius: 3px;
+	border: 1px solid grey;
+}
+button:hover {
+	background-color: white;
+	transition: 0.3s;
+}
